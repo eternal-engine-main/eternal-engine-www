@@ -1,45 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Eternal Forge Engine</title>
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Eternal Forge Engine</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-  <nav class="main-nav">
-    <div class="nav-container">
-      <a href="index.html" class="logo">Eternal Forge</a>
-      <ul class="nav-menu">
-        <li><a href="features.html">Features</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  
-  <main>
-    <section class="about-hero">
-      <h1>About Eternal Forge Engine</h1>
-      <p>Building the future of MMO game development</p>
-    </section>
-    
-    <section class="mission">
-      <h2>Our Mission</h2>
-      <p>To democratize MMO game development by providing a powerful, modular, and accessible game engine.</p>
-    </section>
-    
-    <section class="team">
-      <h2>The Team</h2>
-      <p>A dedicated group of developers, designers, and gaming enthusiasts working to build the MMOs of tomorrow.</p>
-    </section>
-  </main>
-  
-  <footer>
-    <p>&copy; 2026 Eternal Forge Engine. MIT License.</p>
-  </footer>
-  
-  <script src="js/main.js"></script>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🔥 Eternal Forge</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="studio.html" class="nav-link">Studio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero about-hero">
+            <div class="hero-content animate__animated animate__fadeIn">
+                <h1 class="hero-title">Our Vision</h1>
+                <p class="hero-subtitle">Redefining the boundaries of MMO development through innovation, performance, and community-driven technology.</p>
+            </div>
+        </section>
+
+        <section class="about-content max-width">
+            <div class="about-grid">
+                <div class="about-text animate__animated animate__fadeInLeft">
+                    <h2>The Eternal Story</h2>
+                    <p>Founded in 2024, Eternal Forge Engine began as a small project with a massive goal: to make high-end MMO development accessible to everyone. We believed that the technical barriers to entry were too high, and the tools available were too rigid.</p>
+                    <p>Today, Eternal Forge is a global leader in modular game engine technology, powering some of the most ambitious isometric MMORPGs in the industry.</p>
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <span>20+</span>
+                            <p>Core Engineers</p>
+                        </div>
+                        <div class="about-stat">
+                            <span>50+</span>
+                            <p>Open Source Plugins</p>
+                        </div>
+                        <div class="about-stat">
+                            <span>1M+</span>
+                            <p>Lines of Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image animate__animated animate__fadeInRight">
+                    <img src="https://via.placeholder.com/600x400/1a1a2e/16f4d0?text=Engine+Architecture" alt="Engine Architecture" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-vision">
+            <div class="max-width grid-2">
+                <div class="card mission-card">
+                    <h3>Our Mission</h3>
+                    <p>To democratize MMO game development by providing a powerful, modular, and accessible game engine that empowers creators to build the worlds of tomorrow.</p>
+                </div>
+                <div class="card vision-card">
+                    <h3>Our Vision</h3>
+                    <p>A future where every developer, regardless of team size or budget, has the tools to create immersive, high-performance virtual experiences that bring people together.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section max-width">
+            <div class="section-title">
+                <h2>The Forge Team</h2>
+                <p>Meet the visionaries behind the engine</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">👤</div>
+                    <h4>Alex Rivers</h4>
+                    <p>Founder & Lead Architect</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">👤</div>
+                    <h4>Sarah Chen</h4>
+                    <p>Head of Graphics Engine</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">👤</div>
+                    <h4>Marcus Thorne</h4>
+                    <p>Network Infrastructure Lead</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">👤</div>
+                    <h4>Elena Vance</h4>
+                    <p>Lead UI/UX Designer</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Eternal Forge Engine. MIT License.</p>
+        </div>
+    </footer>
+
+    <style>
+        .about-content { padding: 8rem 2rem; }
+        .about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 5rem; align-items: center; }
+        .about-text h2 { font-size: 2.5rem; margin-bottom: 2rem; color: var(--primary); }
+        .about-text p { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+        .about-stats { display: flex; gap: 3rem; margin-top: 3rem; }
+        .about-stat span { display: block; font-size: 2rem; font-weight: 800; color: #fff; font-family: 'Orbitron'; }
+        .about-stat p { font-size: 0.9rem; margin: 0; }
+        .about-image img { width: 100%; border-radius: 20px; border: 1px solid rgba(22, 244, 208, 0.2); }
+        
+        .mission-vision { padding: 8rem 2rem; background: #050510; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+        .card { padding: 3rem; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.05); background: var(--bg-card); }
+        .card h3 { color: var(--primary); margin-bottom: 1.5rem; }
+        
+        .team-section { padding: 8rem 2rem; }
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-top: 4rem; }
+        .team-member { text-align: center; }
+        .member-avatar { width: 100px; height: 100px; background: rgba(22, 244, 208, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3rem; margin: 0 auto 1.5rem; border: 1px solid var(--primary); }
+        .team-member h4 { margin-bottom: 0.5rem; }
+        .team-member p { font-size: 0.8rem; color: var(--text-muted); }
+        
+        .max-width { max-width: 1200px; margin: 0 auto; }
+        @media (max-width: 968px) {
+            .about-grid { grid-template-columns: 1fr; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .about-stats { flex-direction: column; gap: 2rem; }
+        }
+    </style>
+    <script src="js/main.js"></script>
+    <script src="js/ui.js"></script>
 </body>
 </html>
