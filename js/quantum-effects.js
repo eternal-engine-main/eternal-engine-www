@@ -13,7 +13,7 @@ class QuantumEngine {
         }
         this.ctx = this.canvas.getContext('2d');
         this.particles = [];
-        this.numberOfParticles = 100;
+        this.numberOfParticles =00;
         this.mouse = { x: null, y: null, radius: 150 };
 
         this.init();
