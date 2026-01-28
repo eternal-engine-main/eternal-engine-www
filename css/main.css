@@ -27,7 +27,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 body {
@@ -66,7 +66,7 @@ h1, h2, h3, .logo {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--primary);
     text-decoration: none;
     font-weight: 900;
@@ -84,10 +84,11 @@ h1, h2, h3, .logo {
     color: var(--text-muted);
     font-weight: 500;
     transition: var(--transition);
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--primary);
 }
 
@@ -125,7 +126,7 @@ h1, h2, h3, .logo {
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 4.8rem;
     margin-bottom: 1.5rem;
     line-height: 1.1;
     background: linear-gradient(to right, #fff, var(--primary));
@@ -134,7 +135,7 @@ h1, h2, h3, .logo {
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--text-muted);
     margin-bottom: 3rem;
     max-width: 700px;
@@ -196,7 +197,7 @@ h1, h2, h3, .logo {
 }
 
 .stat-item h3 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: var(--primary);
     margin-bottom: 0.5rem;
 }
@@ -219,7 +220,7 @@ h1, h2, h3, .logo {
 }
 
 .section-title h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
@@ -246,7 +247,7 @@ h1, h2, h3, .logo {
 }
 
 .feature-icon {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
 }
 
@@ -329,7 +330,7 @@ h1, h2, h3, .logo {
 }
 
 .price {
-    font-size: 3rem;
+    font-size: 3.6rem;
     font-weight: 800;
     margin: 2rem 0;
     color: #fff;
@@ -358,7 +359,7 @@ h1, h2, h3, .logo {
 }
 
 .cta-content h2 {
-    font-size: 3rem;
+    font-size: 3.6rem;
     margin-bottom: 1.5rem;
 }
 
@@ -438,19 +439,24 @@ footer {
     .nav-menu {
         display: none;
     }
+
     .hamburger {
         display: flex;
     }
+
     .hero-title {
         font-size: 2.5rem;
     }
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
+
     .hero-stats {
         grid-template-columns: 1fr;
     }
+
     .pricing-card.featured {
         transform: none;
     }
