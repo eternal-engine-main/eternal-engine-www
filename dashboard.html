@@ -1,40 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard - Eternal Forge Engine</title>
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Dashboard - Eternal Forge Engine</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<body>
-  <nav class="main-nav">
-    <div class="nav-container">
-      <a href="index.html" class="logo">Eternal Forge</a>
-      <ul class="nav-menu">
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="studio.html">Studio</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-      </ul>
+<body class="dashboard-body">
+    <div class="dashboard-wrapper">
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="logo">🔥 Eternal</a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html" class="active">📊 Overview</a></li>
+                    <li><a href="studio.html">🎨 Studio</a></li>
+                    <li><a href="gallery.html">🖼️ Assets</a></li>
+                    <li><a href="features.html">🛠️ Tools</a></li>
+                    <li><hr></li>
+                    <li><a href="#">⚙️ Settings</a></li>
+                    <li><a href="contact.html">❓ Support</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-user">
+                <div class="user-avatar">JD</div>
+                <div class="user-info">
+                    <p class="user-name">John Doe</p>
+                    <p class="user-plan">Pro Member</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <header class="dashboard-header">
+                <div class="header-left">
+                    <h1>Developer Overview</h1>
+                    <p>Welcome back, John! Here's what's happening with your projects.</p>
+                </div>
+                <div class="header-right">
+                    <button class="btn btn-primary">+ New Project</button>
+                </div>
+            </header>
+
+            <!-- Stats Grid -->
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <p class="stat-label">Active Projects</p>
+                    <h2 class="stat-value">12</h2>
+                    <p class="stat-trend positive">↑ 2 this month</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-label">Total Assets</p>
+                    <h2 class="stat-value">1,420</h2>
+                    <p class="stat-trend positive">↑ 45 today</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-label">Team Members</p>
+                    <h2 class="stat-value">8</h2>
+                    <p class="stat-trend neutral">No change</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-label">Server Health</p>
+                    <h2 class="stat-value">99.9%</h2>
+                    <p class="stat-trend positive">Stable</p>
+                </div>
+            </section>
+
+            <!-- Content Rows -->
+            <div class="dashboard-grid">
+                <!-- Recent Projects -->
+                <section class="content-card recent-projects">
+                    <div class="card-header">
+                        <h2>Recent Projects</h2>
+                        <a href="#">View All</a>
+                    </div>
+                    <div class="project-list">
+                        <div class="project-item">
+                            <div class="project-icon">🏰</div>
+                            <div class="project-details">
+                                <h3>Eternal Kingdom</h3>
+                                <p>Last edited 2 hours ago</p>
+                            </div>
+                            <div class="project-status status-active">Live</div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-icon">⚔️</div>
+                            <div class="project-details">
+                                <h3>Shadow Forge</h3>
+                                <p>Last edited yesterday</p>
+                            </div>
+                            <div class="project-status status-dev">In Dev</div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-icon">🌲</div>
+                            <div class="project-details">
+                                <h3>Whispering Woods</h3>
+                                <p>Last edited 3 days ago</p>
+                            </div>
+                            <div class="project-status status-dev">In Dev</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Activity Feed -->
+                <section class="content-card activity-feed">
+                    <div class="card-header">
+                        <h2>Recent Activity</h2>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <span class="activity-dot dot-primary"></span>
+                            <div class="activity-text">
+                                <p><strong>New Plugin</strong>: "Quantum Weather" was integrated into <em>Eternal Kingdom</em>.</p>
+                                <span class="activity-time">1 hour ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-dot dot-secondary"></span>
+                            <div class="activity-text">
+                                <p><strong>Deployment</strong>: <em>Shadow Forge</em> beta server is now online.</p>
+                                <span class="activity-time">4 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-dot dot-accent"></span>
+                            <div class="activity-text">
+                                <p><strong>Team</strong>: Sarah joined the <em>Whispering Woods</em> project.</p>
+                                <span class="activity-time">Yesterday</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
     </div>
-  </nav>
-  
-  <main>
-    <section class="dashboard-hero">
-      <h1>User Dashboard</h1>
-      <p>Manage your projects and account</p>
-    </section>
-    
-    <section class="stats">
-      <div class="stat"><h3>Projects</h3><p>0</p></div>
-      <div class="stat"><h3>Assets</h3><p>0</p></div>
-      <div class="stat"><h3>Team</h3><p>1</p></div>
-    </section>
-  </main>
-  
-  <footer>
-    <p>&copy; 2026 Eternal Forge Engine. MIT License.</p>
-  </footer>
-  
-  <script src="js/main.js"></script>
+
+    <style>
+        .dashboard-body { background: #050510; color: #fff; margin: 0; font-family: 'Inter', sans-serif; }
+        .dashboard-wrapper { display: flex; min-height: 100vh; }
+        
+        /* Sidebar */
+        .dashboard-sidebar { width: 260px; background: #0b0b1a; border-right: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; padding: 2rem; position: fixed; height: 100vh; }
+        .sidebar-header { margin-bottom: 3rem; }
+        .sidebar-nav ul { list-style: none; padding: 0; }
+        .sidebar-nav li { margin-bottom: 1rem; }
+        .sidebar-nav a { color: var(--text-muted); text-decoration: none; font-weight: 500; display: block; padding: 0.8rem 1rem; border-radius: 8px; transition: 0.3s; }
+        .sidebar-nav a:hover, .sidebar-nav a.active { background: rgba(22, 244, 208, 0.1); color: var(--primary); }
+        .sidebar-user { margin-top: auto; display: flex; align-items: center; gap: 1rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05); }
+        .user-avatar { width: 40px; height: 40px; background: var(--primary); color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+        .user-info p { margin: 0; line-height: 1.2; }
+        .user-name { font-weight: 600; font-size: 0.9rem; }
+        .user-plan { font-size: 0.75rem; color: var(--text-muted); }
+
+        /* Main */
+        .dashboard-main { flex: 1; margin-left: 260px; padding: 3rem; }
+        .dashboard-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 3rem; }
+        .header-left h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .header-left p { color: var(--text-muted); }
+
+        /* Stats */
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 3rem; }
+        .stat-card { background: #1a1a2e; padding: 1.5rem; border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); }
+        .stat-label { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+        .stat-value { font-size: 1.8rem; margin-bottom: 0.5rem; color: var(--primary); }
+        .stat-trend { font-size: 0.75rem; }
+        .positive { color: #16f4d0; }
+        .neutral { color: var(--text-muted); }
+
+        /* Grid */
+        .dashboard-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 2rem; }
+        .content-card { background: #1a1a2e; padding: 2rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); }
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+        .card-header h2 { font-size: 1.2rem; }
+        .card-header a { font-size: 0.8rem; color: var(--primary); text-decoration: none; }
+
+        /* Project List */
+        .project-item { display: flex; align-items: center; gap: 1.2rem; padding: 1rem; background: #0b0b1a; border-radius: 12px; margin-bottom: 1rem; border: 1px solid transparent; transition: 0.3s; }
+        .project-item:hover { border-color: var(--primary); transform: translateX(5px); }
+        .project-icon { font-size: 1.5rem; }
+        .project-details h3 { font-size: 1rem; margin-bottom: 0.2rem; }
+        .project-details p { font-size: 0.8rem; color: var(--text-muted); margin: 0; }
+        .project-status { margin-left: auto; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 20px; }
+        .status-active { background: rgba(22, 244, 208, 0.1); color: var(--primary); }
+        .status-dev { background: rgba(139, 92, 246, 0.1); color: #8b5cf6; }
+
+        /* Activity Feed */
+        .activity-item { display: flex; gap: 1rem; margin-bottom: 1.5rem; position: relative; }
+        .activity-dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 0.5rem; flex-shrink: 0; }
+        .dot-primary { background: var(--primary); box-shadow: 0 0 10px var(--primary); }
+        .dot-secondary { background: var(--secondary); }
+        .dot-accent { background: var(--accent); }
+        .activity-text p { font-size: 0.9rem; margin: 0 0 0.3rem; line-height: 1.4; }
+        .activity-text strong { color: #fff; }
+        .activity-time { font-size: 0.75rem; color: var(--text-muted); }
+
+        @media (max-width: 1200px) {
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .dashboard-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </body>
 </html>
