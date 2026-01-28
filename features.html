@@ -1,50 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Features - Eternal Forge Engine</title>
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engine Features - Eternal Forge Engine</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-  <nav class="main-nav">
-    <div class="nav-container">
-      <a href="index.html" class="logo">Eternal Forge</a>
-      <ul class="nav-menu">
-        <li><a href="features.html">Features</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  
-  <main>
-    <section class="features-hero">
-      <h1>Engine Features</h1>
-      <p>Powerful tools for building immersive MMO experiences</p>
-    </section>
-    
-    <section class="features-grid">
-      <div class="feature">
-        <h3>Quantum Physics Engine</h3>
-        <p>Advanced particle simulation and physics</p>
-      </div>
-      <div class="feature">
-        <h3>Scalable Architecture</h3>
-        <p>Handle thousands of concurrent players</p>
-      </div>
-      <div class="feature">
-        <h3>Cross-Platform</h3>
-        <p>Deploy to Windows, Linux, macOS, and Web</p>
-      </div>
-    </section>
-  </main>
-  
-  <footer>
-    <p>&copy; 2026 Eternal Forge Engine. MIT License.</p>
-  </footer>
-  
-  <script src="js/main.js"></script>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🔥 Eternal Forge</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="features.html" class="nav-link active">Features</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="studio.html" class="nav-link">Studio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero features-hero">
+            <div class="hero-content animate__animated animate__fadeIn">
+                <h1 class="hero-title">Powerful Capabilities</h1>
+                <p class="hero-subtitle">Discover the technical innovations that make Eternal Forge the ultimate engine for modern MMORPGs.</p>
+            </div>
+        </section>
+
+        <!-- Technical Deep Dive -->
+        <section class="features-detailed max-width">
+            <div class="feature-row animate__animated animate__fadeInUp">
+                <div class="feature-text">
+                    <span class="feature-tag">Core Engine</span>
+                    <h2>Quantum Physics Engine</h2>
+                    <p>Our proprietary physics engine utilizes quantum-inspired algorithms to simulate thousands of dynamic particles and rigid bodies simultaneously with zero latency. Built for high-density MMO environments.</p>
+                    <ul class="feature-list">
+                        <li>✓ Deterministic lock-step simulation</li>
+                        <li>✓ Hardware-accelerated collision detection</li>
+                        <li>✓ Fluid and soft-body support</li>
+                    </ul>
+                </div>
+                <div class="feature-media">
+                    <img src="https://via.placeholder.com/500x300/1a1a2e/16f4d0?text=Physics+Simulation" alt="Physics" class="rounded-lg">
+                </div>
+            </div>
+
+            <div class="feature-row reverse animate__animated animate__fadeInUp">
+                <div class="feature-text">
+                    <span class="feature-tag">Networking</span>
+                    <h2>Distributed Architecture</h2>
+                    <p>Scale your world across multiple server nodes seamlessly. Our networking layer handles load balancing, spatial partitioning, and state synchronization automatically.</p>
+                    <ul class="feature-list">
+                        <li>✓ Global low-latency data centers</li>
+                        <li>✓ Automatic sharding and zoning</li>
+                        <li>✓ Advanced anti-cheat integration</li>
+                    </ul>
+                </div>
+                <div class="feature-media">
+                    <img src="https://via.placeholder.com/500x300/1a1a2e/16f4d0?text=Network+Toplogy" alt="Networking" class="rounded-lg">
+                </div>
+            </div>
+
+            <div class="feature-row animate__animated animate__fadeInUp">
+                <div class="feature-text">
+                    <span class="feature-tag">Graphics</span>
+                    <h2>Isometric Raytracing</h2>
+                    <p>Stunning visuals with real-time global illumination specifically optimized for isometric perspectives. Get high-end graphics without the performance overhead of traditional 3D engines.</p>
+                    <ul class="feature-list">
+                        <li>✓ Real-time dynamic lighting</li>
+                        <li>✓ Advanced PBR material system</li>
+                        <li>✓ Volumetric fog and atmosphere</li>
+                    </ul>
+                </div>
+                <div class="feature-media">
+                    <img src="https://via.placeholder.com/500x300/1a1a2e/16f4d0?text=Graphics+Render" alt="Graphics" class="rounded-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Grid -->
+        <section class="feature-showcase">
+            <div class="max-width grid-3">
+                <div class="showcase-card">
+                    <div class="card-icon">🧠</div>
+                    <h3>AI Behavior Trees</h3>
+                    <p>Visual scripting for complex NPC behaviors and ecological systems.</p>
+                </div>
+                <div class="showcase-card">
+                    <div class="card-icon">⚒️</div>
+                    <h3>Modding API</h3>
+                    <p>First-class support for community-driven content and expansions.</p>
+                </div>
+                <div class="showcase-card">
+                    <div class="card-icon">📱</div>
+                    <h3>Mobile Seamless</h3>
+                    <p>Switch between desktop and mobile with automatic UI scaling.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Eternal Forge Engine. MIT License.</p>
+        </div>
+    </footer>
+
+    <style>
+        .features-detailed { padding: 8rem 2rem; }
+        .feature-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; margin-bottom: 10rem; }
+        .feature-row.reverse { direction: rtl; }
+        .feature-row.reverse .feature-text { direction: ltr; }
+        .feature-tag { color: var(--primary); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
+        .feature-text h2 { font-size: 2.5rem; margin: 1rem 0 1.5rem; }
+        .feature-text p { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem; }
+        .feature-list { list-style: none; padding: 0; }
+        .feature-list li { margin-bottom: 0.8rem; color: #fff; font-weight: 500; }
+        .feature-media img { width: 100%; border: 1px solid rgba(22, 244, 208, 0.2); }
+        
+        .feature-showcase { padding: 8rem 2rem; background: #050510; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
+        .showcase-card { padding: 3rem; background: var(--bg-card); border-radius: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
+        .showcase-card:hover { transform: translateY(-10px); border-color: var(--primary); }
+        .card-icon { font-size: 3rem; margin-bottom: 1.5rem; }
+        .showcase-card h3 { margin-bottom: 1rem; }
+        .showcase-card p { color: var(--text-muted); font-size: 0.9rem; }
+        
+        .max-width { max-width: 1200px; margin: 0 auto; }
+        @media (max-width: 968px) {
+            .feature-row { grid-template-columns: 1fr; gap: 3rem; margin-bottom: 6rem; }
+            .grid-3 { grid-template-columns: 1fr; }
+        }
+    </style>
+    <script src="js/main.js"></script>
+    <script src="js/ui.js"></script>
 </body>
 </html>
