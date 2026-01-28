@@ -38,7 +38,7 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, .logo {
+h1, h2, h3,  {
     font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -59,15 +59,13 @@ h1, h2, h3, .logo {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 2rem;
-    display: flex;
+    padding: 0.5rem 2rem;    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    font-size: 21.3rem;
-    color: var(--primary);
+ {
+    font-size: 1.2rem;    color: var(--primary);
     text-decoration: none;
     font-weight: 900;
         white-space: nowrap;
