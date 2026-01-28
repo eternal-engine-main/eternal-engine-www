@@ -66,10 +66,11 @@ h1, h2, h3, .logo {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 21.3rem;
     color: var(--primary);
     text-decoration: none;
     font-weight: 900;
+        white-space: nowrap;
     text-shadow: 0 0 10px var(--primary-glow);
 }
 
