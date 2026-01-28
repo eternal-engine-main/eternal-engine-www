@@ -1,126 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eternal Forge Engine - A modular, cross-platform MMO game engine built with C++20">
-    <title>Eternal Forge Engine - Official Website</title>
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/quantum-theme.css">
-    <link rel="stylesheet" href="css/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eternal Forge Engine - A modular, cross-platform MMO game engine built with C++20">
+  <title>Eternal Forge Engine - Official Website</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <h1>Eternal Forge Engine</h1>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <a href="dashboard.html" class="btn btn-secondary">Dashboard</a>
-                <a href="studio.html" class="btn btn-primary">Studio</a>
-            </div>
-        </div>
-    </nav>
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Eternal Forge</a>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <main>
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-background" id="quantumCanvas"></div>
-        <div class="container hero-content">
-            <h1 class="hero-title">Build the MMOs of Tomorrow</h1>
-            <p class="hero-subtitle">A modular, extensible game engine platform designed for high-end isometric MMORPGs</p>
-            <div class="hero-cta">
-                <a href="studio.html" class="btn btn-large btn-primary">Start Creating</a>
-                <a href="about.html" class="btn btn-large btn-outline">Learn More</a>
-            </div>
+      <div class="hero-content">
+        <h1>Build the MMOs of Tomorrow</h1>
+        <p>A modular, extensible game engine platform designed for high-end isometric MMORPGs</p>
+        <div>
+          <a href="#features" class="btn btn-primary">Start Creating</a>
+          <a href="#learn" class="btn btn-secondary">Learn More</a>
         </div>
+      </div>
     </section>
 
-    <!-- Features Highlight -->
-    <section class="features-preview">
-        <div class="container">
-            <h2>Why Choose Eternal Forge?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">✨</div>
-                    <h3>Cross-Platform</h3>
-                    <p>Windows, macOS, iOS, Android - one codebase, all platforms</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔌</div>
-                    <h3>Plugin-Driven</h3>
-                    <p>Extensible architecture with dynamic plugin loading</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📦</div>
-                    <h3>Data-Driven</h3>
-                    <p>Hot-reloadable content defined in databases</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Future-Proof</h3>
-                    <p>AI/ML, VR, blockchain ready architecture</p>
-                </div>
-            </div>
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+      <div class="section-title">
+        <h2>Why Choose Eternal Forge?</h2>
+        <p>Powerful tools and cutting-edge technology for building immersive MMO experiences</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>Cross-Platform</h3>
+          <p>Windows, macOS, iOS, Android - one codebase, all platforms. Deploy your game everywhere.</p>
         </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔌</div>
+          <h3>Plugin-Driven</h3>
+          <p>Extensible architecture with dynamic plugin loading. Customize everything to your needs.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💾</div>
+          <h3>Data-Driven</h3>
+          <p>Hot-reloadable content defined in databases. Update your game without recompilation.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>Future-Proof</h3>
+          <p>AI/ML, VR, blockchain ready architecture. Built with modern C++20 for maximum performance.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Quantum Physics</h3>
+          <p>Advanced particle simulation and physics engine for realistic game worlds.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3>Scalable</h3>
+          <p>Handle thousands of concurrent players with distributed server architecture.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Forge Your Game?</h2>
-            <p>Join thousands of developers building the next generation of MMORPGs</p>
-            <a href="studio.html" class="btn btn-large btn-primary">Get Started Free</a>
-        </div>
+    <!-- CTA Section -->
+    <section class="features-section" id="learn">
+      <div class="section-title">
+        <h2>Ready to Forge Your Game?</h2>
+        <p>Join thousands of developers building the next generation of MMORPGs</p>
+        <br>
+        <a href="dashboard.html" class="btn btn-primary">Get Started Free</a>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Eternal Forge Engine</h4>
-                    <p>Built for the MMOs of tomorrow</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Links</h4>
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Eternal Forge Engine. MIT License.</p>
-            </div>
-        </div>
-    </footer>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Eternal Forge Engine</h3>
+        <p>Built for the MMOs of tomorrow</p>
+      </div>
+      <div class="footer-section">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">API Reference</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Discord</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Eternal Forge Engine. MIT License.</p>
+    </div>
+  </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="js/utils.js"></script>
-    <script src="js/quantum-effects.js"></script>
-    <script src="js/ui.js"></script>
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/quantum-effects.js"></script>
 </body>
 </html>
